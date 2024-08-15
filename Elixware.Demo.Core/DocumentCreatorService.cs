@@ -9,12 +9,12 @@ namespace Demo.Core
     internal class DocumentCreatorService : IDocumentCreatorService
     {
         private readonly IRendererProvider _rendererProvider;
-        private readonly ITemplateProvider _templateProvider;
+        private readonly ITemplateLoader _templateLoader;
 
-        public DocumentCreatorService(IRendererProvider rendererProvider, ITemplateProvider templateProvider)
+        public DocumentCreatorService(IRendererProvider rendererProvider, ITemplateLoader templateProvider)
         {
             _rendererProvider = rendererProvider;
-            _templateProvider = templateProvider;
+            _templateLoader = templateProvider;
         }
 
         public async Task<ServiceResult<OutputFileData>> CreateDocumentAsync(InputDataRequest input)
@@ -32,7 +32,7 @@ namespace Demo.Core
                 var renderer = _rendererProvider.GetRenderer(input.Template);
                 if (input.Template != null)
                 {
-                    var templateData = await _templateProvider.LoadTemplateAsync(input.Template.Path);
+                    var templateData = await _templateLoader.LoadTemplateAsync(input.Template);
                     rendererInput.TemplateFileData = templateData;
                 }
                 var fileData = await renderer.RenderDocumentAsync(rendererInput);

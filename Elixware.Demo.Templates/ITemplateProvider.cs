@@ -1,7 +1,9 @@
-﻿namespace Demo.Templates
+﻿using Demo.Common.Models;
+
+namespace Demo.Templates
 {
-    public interface ITemplateProvider
+    internal interface ITemplateProvider
     {
-        public Task<byte[]?> LoadTemplateAsync(string template);
+        public Task<byte[]?> LoadTemplateAsync(TemplateInfo template);
     }
 }

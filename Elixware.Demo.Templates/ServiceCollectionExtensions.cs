@@ -7,7 +7,7 @@ namespace Demo.Templates
     {
         public static IServiceCollection AddTemplateProvidersServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<ITemplateProvider, FileTemplateProvider>();
+            services.AddScoped<ITemplateLoader, TemplateLoader>();
             return services;
         }
     }
