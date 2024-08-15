@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elixware.ABCpdfDemo.API", "Elixware.ABCpdfDemo.API\Elixware.ABCpdfDemo.API.csproj", "{88491053-7363-4F69-9C08-0CE9A5A9622B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elixware.Demo.Renderer", "Elixware.Demo.Renderer\Elixware.Demo.Renderer.csproj", "{D58E105E-B575-410A-B55C-44BFEC971E88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elixware.Demo.Common", "Elixware.Demo.Common\Elixware.Demo.Common.csproj", "{6FFA5956-CB7F-4F5F-85C3-ABC4916126C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elixware.Demo.Core", "Elixware.Demo.Core\Elixware.Demo.Core.csproj", "{D98018B5-34F2-496C-9B2D-8D9DDA3771EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elixware.Demo.Templates", "Elixware.Demo.Templates\Elixware.Demo.Templates.csproj", "{37884875-F392-4B73-9CEE-D3A092350E25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elixware.ABCpdfDemo.Console", "Elixware.ABCpdfDemo.Console\Elixware.ABCpdfDemo.Console.csproj", "{DFC5E591-1092-4F06-AB95-278F23A1A193}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88491053-7363-4F69-9C08-0CE9A5A9622B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88491053-7363-4F69-9C08-0CE9A5A9622B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88491053-7363-4F69-9C08-0CE9A5A9622B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88491053-7363-4F69-9C08-0CE9A5A9622B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D58E105E-B575-410A-B55C-44BFEC971E88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58E105E-B575-410A-B55C-44BFEC971E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58E105E-B575-410A-B55C-44BFEC971E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58E105E-B575-410A-B55C-44BFEC971E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FFA5956-CB7F-4F5F-85C3-ABC4916126C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FFA5956-CB7F-4F5F-85C3-ABC4916126C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FFA5956-CB7F-4F5F-85C3-ABC4916126C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FFA5956-CB7F-4F5F-85C3-ABC4916126C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D98018B5-34F2-496C-9B2D-8D9DDA3771EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D98018B5-34F2-496C-9B2D-8D9DDA3771EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D98018B5-34F2-496C-9B2D-8D9DDA3771EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D98018B5-34F2-496C-9B2D-8D9DDA3771EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37884875-F392-4B73-9CEE-D3A092350E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37884875-F392-4B73-9CEE-D3A092350E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37884875-F392-4B73-9CEE-D3A092350E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37884875-F392-4B73-9CEE-D3A092350E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC5E591-1092-4F06-AB95-278F23A1A193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC5E591-1092-4F06-AB95-278F23A1A193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC5E591-1092-4F06-AB95-278F23A1A193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC5E591-1092-4F06-AB95-278F23A1A193}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EB9F716-2025-4AA6-96EF-36FA21A13892}
+	EndGlobalSection
+EndGlobal
