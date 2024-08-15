@@ -1,7 +1,13 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS builder
+# For ABCChrome123
+RUN apt-get update -y
+RUN apt update --fix-missing 
+RUN apt-get upgrade -y
+RUN apt install -y curl
+# === 
 WORKDIR /App
 
-COPY ../* ./
+COPY . ./
 RUN dotnet restore
 RUN dotnet publish -c Release -o out
 
