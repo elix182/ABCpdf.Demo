@@ -12,12 +12,13 @@ namespace Demo.Templates
                 return null;
             }
             ITemplateProvider? provider = null;
-            if(string.IsNullOrWhiteSpace(template.Path)){
-                provider = new FileTemplateProvider();
-            }
-            else if(string.IsNullOrWhiteSpace(template.EncodedFile))
+            if(!string.IsNullOrWhiteSpace(template.EncodedFile))
             {
                 provider = new EncodedFileTemplateProvider();
+            }
+            else if(!string.IsNullOrWhiteSpace(template.Path))
+            {
+                provider = new FileTemplateProvider();
             }
 
             if(provider == null){
